@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -16,5 +17,11 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public void onBackPressed() {
         startActivity(new Intent(getApplicationContext(),OTPActivity.class));
+    }
+
+    public void voterActivityStart(View view) {
+        Intent i = new Intent(MainActivity.this,VoterActivity.class);
+        startActivity(i);
+
     }
 }

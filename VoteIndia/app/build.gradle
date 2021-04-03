@@ -9,7 +9,7 @@ android {
 
     defaultConfig {
         applicationId "com.example.voteindia"
-        minSdkVersion 16
+        minSdkVersion 21
         targetSdkVersion 30
         versionCode 1
         versionName "1.0"
@@ -42,4 +42,7 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
     implementation 'com.github.joielechong:countrycodepicker:2.4.2'
     implementation 'androidx.multidex:multidex:2.0.1'
+
+    implementation 'org.web3j:core:4.1.0-android'
+    implementation 'com.github.fornewid:neumorphism:0.3.0'
 }

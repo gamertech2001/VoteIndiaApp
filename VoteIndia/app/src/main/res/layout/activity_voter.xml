@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E9ECED"
+    tools:context=".MainActivity">
+
+    <soup.neumorphism.NeumorphTextView
+        android:id="@+id/textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select A Candidate"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:elevation="1dp"
+        app:neumorph_shadowColorDark="#C6CCCB"
+        app:neumorph_shadowElevation="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.463"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023"
+        android:gravity="center_horizontal" />
+
+
+    <soup.neumorphism.NeumorphImageButton
+        android:id="@+id/candidate4"
+        style="@style/Widget.Neumorph.ImageButton"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="36dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/candidate4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/candidate2"
+        app:layout_constraintVertical_bias="0.293"
+        app:neumorph_shapeType="flat" />
+
+    <soup.neumorphism.NeumorphImageButton
+        android:id="@+id/candidate3"
+        style="@style/Widget.Neumorph.ImageButton"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="40dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/candidate3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/candidate4"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/candidate1"
+        app:layout_constraintVertical_bias="0.289"
+        app:neumorph_shapeType="flat" />
+
+    <soup.neumorphism.NeumorphImageButton
+        android:id="@+id/candidate2"
+        style="@style/Widget.Neumorph.ImageButton"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="156dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/candidate2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.428"
+        app:layout_constraintStart_toEndOf="@+id/candidate1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:neumorph_shapeType="flat" />
+
+    <soup.neumorphism.NeumorphImageButton
+        android:id="@+id/candidate1"
+        style="@style/Widget.Neumorph.ImageButton"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="100dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/candidate1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textview"
+        app:neumorph_shapeType="flat" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
