@@ -66,7 +66,7 @@
         android:layout_height="160dp"
         android:layout_marginTop="156dp"
         android:scaleType="centerInside"
-        android:src="@drawable/candidate2"
+        android:src="@drawable/bjp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.428"
         app:layout_constraintStart_toEndOf="@+id/candidate1"
