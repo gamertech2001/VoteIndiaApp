@@ -28,10 +28,10 @@ public class VoterActivity extends AppCompatActivity implements View.OnClickList
         setContentView(R.layout.activity_voter);
 
         //all the candidate buttons
-        NeumorphImageButton candidate1 = findViewById(R.id.candidate1);
-        NeumorphImageButton candidate2 = findViewById(R.id.candidate2);
-        NeumorphImageButton candidate3 = findViewById(R.id.candidate3);
-        NeumorphImageButton candidate4 = findViewById(R.id.candidate4);
+        View candidate1 = findViewById(R.id.candidate1);
+        View candidate2 = findViewById(R.id.candidate2);
+        View candidate3 = findViewById(R.id.candidate3);
+        View candidate4 = findViewById(R.id.candidate4);
 
         candidate1.setOnClickListener(this);
         candidate2.setOnClickListener(this);
@@ -167,5 +167,9 @@ public class VoterActivity extends AppCompatActivity implements View.OnClickList
     public void onBackPressed() {
         startActivity(new Intent(getApplicationContext(),OTPActivity.class));
     }
+
+
+
+
 
 }

@@ -3,7 +3,5 @@
     <item
         android:id="@+id/logout"
         android:title="Logout" />
-    <item
-        android:id="@+id/generalElection"
-        android:title="General Elections" />
+
 </menu>

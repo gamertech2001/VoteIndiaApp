@@ -10,6 +10,7 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.TextView;
 
 import com.google.android.gms.tasks.OnSuccessListener;
@@ -34,16 +35,16 @@ public class ProfileActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile);
 
-        toolbar = findViewById(R.id.toolbar);
+
 
         getSupportActionBar().setTitle("Profile");
         firebaseAuth = FirebaseAuth.getInstance();
         fStore = FirebaseFirestore.getInstance();
 
-        fullName = findViewById(R.id.profileFullName);
-        email = findViewById(R.id.profileEmail);
-        voterid = findViewById(R.id.voterNumberID);
-        contituency = findViewById(R.id.contituencyAddressId);
+        fullName = findViewById(R.id.nametext);
+        email = findViewById(R.id.emailtext);
+        voterid = findViewById(R.id.votertext);
+        contituency = findViewById(R.id.ConstituencyText);
 
         DocumentReference docRef =fStore.collection("users").document(firebaseAuth.getCurrentUser().getUid());
         docRef.get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
@@ -82,12 +83,10 @@ public class ProfileActivity extends AppCompatActivity {
             finish();
         }
 
-
-        if(item.getItemId() == R.id.generalElection){
-            startActivity(new Intent(getApplicationContext(),FaceRedirectActivity.class));
-            finish();
-        }
         return true;
     }
 
+    public void vote(View view) {
+        startActivity(new Intent(getApplicationContext(),FaceRedirectActivity.class));
+    }
 }
