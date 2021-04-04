@@ -8,6 +8,10 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import org.web3j.protocol.Web3j;
+import org.web3j.protocol.core.methods.response.TransactionReceipt;
+import org.web3j.protocol.http.HttpService;
+
 import soup.neumorphism.NeumorphImageButton;
 
 import static android.widget.Toast.LENGTH_SHORT;
@@ -29,11 +33,14 @@ public class VoterActivity extends AppCompatActivity implements View.OnClickList
         NeumorphImageButton candidate3 = findViewById(R.id.candidate3);
         NeumorphImageButton candidate4 = findViewById(R.id.candidate4);
 
-
         candidate1.setOnClickListener(this);
         candidate2.setOnClickListener(this);
         candidate3.setOnClickListener(this);
         candidate4.setOnClickListener(this);
+
+        Web3j web3 = Web3j.build(new HttpService());
+        YourSmartContract contract = YourSmartContract.load("0x1EDB7Ed553265e5F8E90Dac8bf72279564a5FB26");
+
     }
 
     @Override
@@ -56,6 +63,7 @@ public class VoterActivity extends AppCompatActivity implements View.OnClickList
                         public void onClick(View v) {
                             setContentView(R.layout.endpage);
                             voteCast = true;
+                            TransactionReceipt contract;
                         }
                     });
                     cancel.setOnClickListener(new View.OnClickListener() {
@@ -84,6 +92,7 @@ public class VoterActivity extends AppCompatActivity implements View.OnClickList
                         public void onClick(View v) {
                             setContentView(R.layout.endpage);
                             voteCast = true;
+                            TransactionReceipt contract;
                         }
                     });
                     cancel.setOnClickListener(new View.OnClickListener() {
@@ -112,6 +121,7 @@ public class VoterActivity extends AppCompatActivity implements View.OnClickList
                         public void onClick(View v) {
                             setContentView(R.layout.endpage);
                             voteCast = true;
+                            TransactionReceipt contract;
                         }
                     });
                     cancel.setOnClickListener(new View.OnClickListener() {
@@ -140,6 +150,7 @@ public class VoterActivity extends AppCompatActivity implements View.OnClickList
                         public void onClick(View v) {
                             setContentView(R.layout.endpage);
                             voteCast = true;
+                            TransactionReceipt contract;
                         }
                     });
                     cancel.setOnClickListener(new View.OnClickListener() {
