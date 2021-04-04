@@ -18,15 +18,15 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
+        var facematch:Boolean?=false
         val lensFacing =
-                savedInstanceState?.getSerializable(KEY_LENS_FACING) as Facing? ?: Facing.BACK
+                savedInstanceState?.getSerializable(KEY_LENS_FACING) as Facing? ?: Facing.FRONT
         setupCamera(lensFacing)
 
         handler= Handler()
         handler.postDelayed({
-            doSomething()
-        },10000)
+            CheckInterval(facematch=true)
+        },8500)
     }
 
     override fun onResume() {
@@ -74,7 +74,8 @@ class MainActivity : AppCompatActivity() {
         private const val KEY_LENS_FACING = "key-lens-facing"
     }
 
-    private fun doSomething() {
+    private fun CheckInterval(facematch:Boolean) {
+        if(facematch==true)
         Toast.makeText(this,"Verification Success!",Toast.LENGTH_SHORT).show()
         val intent = Intent(this, VoterActivity::class.java)
         startActivity(intent)
