@@ -11,12 +11,8 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         app:layout_constraintEnd_toEndOf="parent"
-<<<<<<< HEAD
         app:layout_constraintStart_toStartOf="parent">
-=======
-        app:layout_constraintStart_toStartOf="parent"
-        >
->>>>>>> 929995a649e38395278f5f16e5ca51d956eb20cd
+
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -82,7 +78,7 @@
                 android:scaleType="centerInside"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:neumorph_shadowElevation="2dp"
-                app:neumorph_shapeType="flat" />
+                app:neumorph_shapeType="flat"/>
 
 
             <TextView
