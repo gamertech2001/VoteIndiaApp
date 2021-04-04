@@ -1,7 +1,10 @@
+
 plugins {
     id 'com.android.application'
     id 'com.google.gms.google-services'
 }
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
 
 android {
     compileSdkVersion 30
@@ -45,4 +48,11 @@ dependencies {
 
     implementation 'org.web3j:core:4.1.0-android'
     implementation 'com.github.fornewid:neumorphism:0.3.0'
+    implementation "androidx.core:core-ktx:+"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation "com.github.husaynhakeem:android-face-detector:2.0"
+    implementation "com.otaliastudios:cameraview:1.5.1"
+}
+repositories {
+    mavenCentral()
 }

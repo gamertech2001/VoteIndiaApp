@@ -16,7 +16,7 @@
         android:text="Select A Candidate"
         android:textAlignment="center"
         android:textColor="#FF9800"
-        android:textSize="40sp"
+        android:textSize="36sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -49,14 +49,13 @@
         android:layout_width="160dp"
         android:layout_height="160dp"
         android:layout_marginTop="40dp"
+        android:layout_marginEnd="24dp"
         android:scaleType="centerInside"
         android:src="@drawable/candidate3"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/candidate4"
-        app:layout_constraintHorizontal_bias="0.509"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/candidate1"
-        app:layout_constraintVertical_bias="0.289"
+        app:layout_constraintVertical_bias="0.293"
         app:neumorph_shapeType="flat" />
 
     <soup.neumorphism.NeumorphImageButton
