@@ -164,7 +164,7 @@ public class OTPActivity extends AppCompatActivity {
             @Override
             public void onSuccess(DocumentSnapshot documentSnapshot) {
                 if(documentSnapshot.exists()){
-                    startActivity(new Intent(getApplicationContext(),MainActivity.class));
+                    startActivity(new Intent(getApplicationContext(),ProfileActivity.class));
                     finish();
                 }else {
                     Toast.makeText(com.example.voteindia.OTPActivity.this, "Voter Not Registered", Toast.LENGTH_SHORT).show();

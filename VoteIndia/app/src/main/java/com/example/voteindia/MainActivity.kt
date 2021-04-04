@@ -26,7 +26,7 @@ class MainActivity : AppCompatActivity() {
         handler= Handler()
         handler.postDelayed({
             doSomething()
-        },5000)
+        },10000)
     }
 
     override fun onResume() {
