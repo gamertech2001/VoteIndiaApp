@@ -77,7 +77,7 @@ public class OTPActivity extends AppCompatActivity {
 
                     } else {
                         phoneNumber.setError("Phone Number is not Valid");
-                        startActivity(new Intent(getApplicationContext(),MainActivity.class));
+
 
                     }
 
