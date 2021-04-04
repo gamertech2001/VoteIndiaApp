@@ -154,7 +154,7 @@ public class VoterActivity extends AppCompatActivity implements View.OnClickList
     }
     @Override
     public void onBackPressed() {
-        startActivity(new Intent(getApplicationContext(),VoterActivity.class));
+        startActivity(new Intent(getApplicationContext(),OTPActivity.class));
     }
 
 }
