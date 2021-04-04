@@ -7,83 +7,127 @@
     android:background="#E9ECED"
     tools:context=".MainActivity">
 
+
     <soup.neumorphism.NeumorphTextView
-        android:id="@+id/textview"
+        android:id="@+id/textView10"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:elevation="1dp"
-        android:gravity="center_horizontal"
-        android:text="Select A Candidate"
-        android:textAlignment="center"
-        android:textColor="#FF9800"
-        android:textSize="36sp"
-        android:textStyle="bold"
+        android:text="Akhilesh Yadav"
+        android:textColor="#000000"
+        android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.463"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.023"
-        app:neumorph_shadowColorDark="#C6CCCB"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toEndOf="@+id/candidate4"
+        app:layout_constraintTop_toTopOf="@+id/candidate4"
+        app:layout_constraintVertical_bias="0.428"
         app:neumorph_shadowElevation="3dp" />
 
+    <soup.neumorphism.NeumorphTextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rahul Gandhi"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.759"
+        app:layout_constraintStart_toStartOf="@+id/candidate3"
+        app:layout_constraintTop_toBottomOf="@+id/textView8"
+        app:neumorph_shadowElevation="3dp" />
+
+    <soup.neumorphism.NeumorphTextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="108dp"
+        android:text="Narendra Modi"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.815"
+        app:layout_constraintStart_toStartOf="@+id/candidate2"
+        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        app:neumorph_shadowElevation="3dp" />
 
     <soup.neumorphism.NeumorphImageButton
         android:id="@+id/candidate4"
         style="@style/Widget.Neumorph.ImageButton"
-        android:layout_width="160dp"
-        android:layout_height="160dp"
-        android:layout_marginTop="40dp"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_marginStart="36dp"
         android:scaleType="centerInside"
         android:src="@drawable/candidate4"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/candidate3"
-        app:layout_constraintTop_toBottomOf="@+id/candidate2"
-        app:layout_constraintVertical_bias="0.293"
+        app:layout_constraintStart_toStartOf="parent"
         app:neumorph_shapeType="flat" />
 
     <soup.neumorphism.NeumorphImageButton
         android:id="@+id/candidate3"
         style="@style/Widget.Neumorph.ImageButton"
-        android:layout_width="160dp"
-        android:layout_height="160dp"
-        android:layout_marginStart="28dp"
-        android:layout_marginTop="40dp"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_marginStart="36dp"
         android:scaleType="centerInside"
         android:src="@drawable/candidate3"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/candidate4"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/candidate1"
-        app:layout_constraintVertical_bias="0.293"
         app:neumorph_shapeType="flat" />
 
     <soup.neumorphism.NeumorphImageButton
         android:id="@+id/candidate2"
         style="@style/Widget.Neumorph.ImageButton"
-        android:layout_width="160dp"
-        android:layout_height="160dp"
-        android:layout_marginTop="156dp"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginBottom="4dp"
         android:scaleType="centerInside"
         android:src="@drawable/bjp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.428"
-        app:layout_constraintStart_toEndOf="@+id/candidate1"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/candidate3"
+        app:layout_constraintStart_toStartOf="parent"
         app:neumorph_shapeType="flat" />
 
     <soup.neumorphism.NeumorphImageButton
         android:id="@+id/candidate1"
         style="@style/Widget.Neumorph.ImageButton"
-        android:layout_width="160dp"
-        android:layout_height="160dp"
-        android:layout_marginStart="28dp"
-        android:layout_marginTop="156dp"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_marginStart="36dp"
         android:scaleType="centerInside"
         android:src="@drawable/candidate1"
+        app:layout_constraintBottom_toTopOf="@+id/candidate2"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView12"
+        app:layout_constraintVertical_bias="1.0"
         app:neumorph_shapeType="flat" />
+
+    <soup.neumorphism.NeumorphTextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Arvind Kejrival"
+        android:textColor="#000000"
+
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/candidate2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.445"
+        app:layout_constraintStart_toEndOf="@+id/candidate1"
+        app:layout_constraintTop_toTopOf="@+id/candidate1"
+        app:neumorph_shadowElevation="3dp" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select A Candidate"
+        android:textColor="#FF9800"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
