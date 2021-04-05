@@ -19,3 +19,11 @@ Key Features:
 
 The user will be directed to a confirmation pop-up for their vote.
 Upon confirmation the app will access the solidity smart contract deployed on the matic test server and cast the vote.
+
+<img src="https://user-images.githubusercontent.com/37260279/113576048-7a5c3700-963c-11eb-9868-228b0f4be62b.jpeg" width="250" height="500" hspace="10"> <img src="https://user-images.githubusercontent.com/37260279/113576571-6c5ae600-963d-11eb-97c7-6eef658309de.jpeg" width="250" height="500" hspace="50">
+
+<img src="https://user-images.githubusercontent.com/37260279/113576044-77f9dd00-963c-11eb-98a9-d05fc805c20c.jpeg" width="250" height="500" hspace="10"> <img src="https://user-images.githubusercontent.com/37260279/113576052-7c25fa80-963c-11eb-9896-b6abf00bacc2.jpeg" width="250" height="500" hspace="50" >
+
+<img src="https://user-images.githubusercontent.com/37260279/113576057-7d572780-963c-11eb-8717-3bb463ca6234.jpeg" width="250" height="500" hspace="10"> <img src="https://user-images.githubusercontent.com/37260279/113576061-7e885480-963c-11eb-9b44-2638b58c8904.jpeg" width="250" height="500" hspace="50">
+
+
