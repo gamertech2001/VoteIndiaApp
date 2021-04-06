@@ -10,7 +10,8 @@ The first step will be a simple OTP verification which has been built using a fi
 The second will be facial recognition with the following key features:​
 * It recognizes faces very accurately​
 * It works offline, in real time​
-* It uses a mobile-oriented deep  learning architecture​
+* It uses a mobile-oriented deep  learning architecture
+
 Once the user goes through the verification process he/she will be directed to a page where they can cast their vote.
 Key Features:
 * Anonymous Votes
